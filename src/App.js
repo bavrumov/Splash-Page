@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './tf.png';
 import './App.css';
 
 class App extends Component {
@@ -9,15 +9,16 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Anything we want can go here. Anything about tensor, or a component that will let us draw and export an input.
           </p>
+          
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks/2499936#2499936"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            A good explanation on weights and bias
           </a>
         </header>
       </div>
