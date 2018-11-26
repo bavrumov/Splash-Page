@@ -19,6 +19,14 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             A good explanation on weights and bias
+            </a>
+          <a
+            className="App-link"
+            href="http://bavrumov.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            My personal site
           </a>
         </header>
       </div>
