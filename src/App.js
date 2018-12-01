@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
-import logo from './tf.png';
+//import { BrowserRouter, Route, Link } from "react-router-dom";
+import {Header} from './Header.js';
+import Portrait from './Portrait.js';
 import './App.css';
 
 class App extends Component {
   render() {
+    let theme = "green-and-blue";
+    //let theme = "poncho";
+    //let theme = "pizelex";
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <Header names={["Boris, Ivy"]}></Header>
+        
+        <header className={"App-header "+theme}>
+          
+        <div className="image-container"><Portrait></Portrait></div>
+        <div className="image-container"><Portrait name="ivy.jpg"></Portrait></div>
           <p>
-            Anything we want can go here. Anything about tensor, or a component that will let us draw and export an input.
+            Anything we want can go here. Some sample text. I love you Ivy;
           </p>
           
-          <a
-            className="App-link"
-            href="https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks/2499936#2499936"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            A good explanation on weights and bias
-          </a>
+          
 
           <a
             className="App-link"
