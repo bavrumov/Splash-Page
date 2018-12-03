@@ -6,21 +6,24 @@ import './App.css';
 
 class App extends Component {
   render() {
-    let theme = "green-and-blue";
+    let themes = ["green-and-blue", "poncho", "pizelex"];
+    let theme = themes[parseInt(Math.random()*3)];
+    //console.log(parseInt(Math.random()*3));
+    //let theme = "green-and-blue";
     //let theme = "poncho";
     //let theme = "pizelex";
     return (
       <div className="App">
-        <Header names={["Boris, Ivy"]}></Header>
         
         <header className={"App-header "+theme}>
-          
-        <div className="image-container"><Portrait></Portrait></div>
-        <div className="image-container"><Portrait name="ivy.jpg"></Portrait></div>
+          <Header id="navigation-bar" names={["About Me", "Projects", "Contact"]}></Header>
+          <div id="0" className="image-container"><Portrait></Portrait></div>
+          <div id="1" className="image-container"><Portrait name="ivy.jpg"></Portrait></div>
+
           <p>
-            Anything we want can go here. Some sample text. I love you Ivy;
+            Anything we want can go here. Some sample text.
           </p>
-          
+            
           
 
           <a
@@ -31,7 +34,9 @@ class App extends Component {
           >
             My personal site
           </a>
+
         </header>
+        <div id="bottom"><Portrait></Portrait></div>
       </div>
     );
   }
