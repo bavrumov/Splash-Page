@@ -45,7 +45,7 @@ export class Header extends Component {
                 <NavItem eventKey={1} href="#navigation-bar">
                     Link Right
                 </NavItem>
-                <NavItem eventKey={2} href="#">
+                <NavItem eventKey={2} href="#bottom">
                     Link Right
                 </NavItem>
                 </Nav>
