@@ -4,6 +4,8 @@ import {NavigationBar} from './NavigationBar.js';
 import sunsetpic from './res/slide1.png';
 import './App.css';
 import Tachyonsocialfooter from './Tachyonsocialfooter.js'
+import {Container, Row, Col} from 'reactstrap';
+import SampleCard from './SampleCard.js';
 
 class App extends Component {
   render() {
@@ -26,8 +28,21 @@ class App extends Component {
         </header>
           
         <div className="App-body">
-          <img className="image-container" alt="a sunset" src={sunsetpic}/>
-          <div>Anything we want can go here. Some sample text.</div>
+          <Container>
+          {/* <Row sm={{size:10, offset:1}}> */}
+          <Row className="job-row">
+            <Col md={4} xs={6}>
+              <SampleCard></SampleCard>
+            </Col>
+            <Col md={4}>
+              <img className="image-container" alt="a sunset" src={sunsetpic}/>
+            </Col>
+            <Col md={4}>
+            <div>Anything we want can go here. Some sample text.</div>
+            </Col>
+          </Row>
+          </Container>
+          
         </div>
 
         <div id="bottom"> <hr/>
