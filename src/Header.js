@@ -18,10 +18,10 @@ export class Header extends Component {
         
         <Navbar id={this.props.id}>
             <Navbar.Header>
-                {/* <Navbar.Brand>
+                <Navbar.Brand>
                 <a href="#bottom">Boris Avrumov</a>
-                </Navbar.Brand> */}
-                {/* <Navbar.Toggle /> */}
+                </Navbar.Brand> 
+                <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
                 <Nav>
