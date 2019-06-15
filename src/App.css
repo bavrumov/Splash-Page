@@ -26,6 +26,10 @@
   display: block;
 }
 
+.padded-top {
+  padding-top: 3em;
+}
+
 .image-container {
   display: inline-block;
   width: 100%;
