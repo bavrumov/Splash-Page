@@ -34,8 +34,7 @@ export class NavigationBar extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Navbar id="top" className="navbar" color="dark" dark expand="md">
+        <Navbar id="top" className="navbar sticky-top" color="dark" dark expand="md">
           <NavbarBrand href="/">Boris Avrumov</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -79,7 +78,6 @@ export class NavigationBar extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
     );
   }
 }
