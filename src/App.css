@@ -42,6 +42,12 @@
   border-radius: 50%;
 }
 
+.shadow-img {
+  -webkit-box-shadow: 35px 30px 17px -11px rgba(31,29,46,0.77);
+  -moz-box-shadow: 35px 30px 17px -11px rgba(31,29,46,0.77);
+  box-shadow: 35px 30px 17px -11px rgba(31,29,46,0.77);
+}
+
 .green-and-blue {
   background: #c2e59c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
