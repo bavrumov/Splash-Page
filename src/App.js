@@ -7,12 +7,13 @@ import './App.css';
 import Tachyonsocialfooter from './Tachyonsocialfooter.js'
 import {Container, Row, Col} from 'reactstrap';
 import WorkCards from './WorkCards.js';
+import Carousel from './Carousel.js';
 
 class App extends Component {
   render() {
-    let themes = ["green-and-blue", "poncho", "pizelex"];
-    let theme = themes[parseInt(Math.random()*3)];
-    //let theme = "green-and-blue";
+    //let themes = ["green-and-blue", "poncho", "pizelex"];
+    //let theme = themes[parseInt(Math.random()*3)];
+    let theme = "green-and-blue";
     //let theme = "poncho";
     //let theme = "pizelex";
     return (
@@ -30,9 +31,16 @@ class App extends Component {
 
           <Container id="App-body">
             <Row className="padded-top">
+              
               <Col md={{size:8, offset:2}}>
                 <img className="image-container" alt="a sunset" src={sunsetpic}/>
               </Col>
+            </Row>
+          </Container>
+
+          <Container>
+            <Row className="padded-top">
+              <Col xs={12}><Carousel></Carousel></Col>
             </Row>
           </Container>
 
