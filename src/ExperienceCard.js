@@ -18,7 +18,7 @@ export default class ExperienceCard extends Component {
         }
 
         return (
-            <div style={{height:"100vh"}}>
+            <div>
             <Card>
                 <CardHeader><Anchor name={this.props.item.name} url={this.props.item.url}></Anchor></CardHeader>
                 <CardImg top width="100%" src={this.props.item.img} alt={this.props.name} />
