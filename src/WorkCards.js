@@ -21,7 +21,7 @@ export default class WorkCards extends Component {
                 {
                     name: "MVI Systems",
                     img: MVI,
-                    description: "A software development company focused on video intercom products for residents and property management.",
+                    description: "A software company focused on video intercom products for residents and property management.",
                     url: "https://www.mvisystems.com/about",
                     date: "Nov 2018 - Mar 2019" 
                 },

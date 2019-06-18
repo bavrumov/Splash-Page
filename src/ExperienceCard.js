@@ -18,7 +18,7 @@ export default class ExperienceCard extends Component {
         }
 
         return (
-            <div>
+            <div style={{height:"100vh"}}>
             <Card>
                 <CardHeader><Anchor name={this.props.item.name} url={this.props.item.url}></Anchor></CardHeader>
                 <CardImg top width="100%" src={this.props.item.img} alt={this.props.name} />
@@ -29,6 +29,7 @@ export default class ExperienceCard extends Component {
                     <CardFooter style={footerStyle}>{this.props.item.description}</CardFooter>
                 </CardBody>
             </Card>
+            <br /> {/* To stop cards from touching eachother in column view */}
             </div>
         )
     }
