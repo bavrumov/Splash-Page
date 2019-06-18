@@ -40,7 +40,7 @@ export default class AnimatedCollapsible extends Component {
     render() {
         return (
             <div>
-            <div onClick={this.toggle} style={{ marginBottom: '.6rem' }}>{this.state.status}</div>
+            <div onClick={this.toggle}>{this.state.status}</div>
             <Collapse
                 isOpen={this.state.collapse}
                 onEntering={this.onEntering}
