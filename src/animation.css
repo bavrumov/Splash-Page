@@ -24,3 +24,7 @@
               transform: rotate(359deg);
     }
   }
+
+  .clickable-hover:hover {
+    cursor: pointer;
+  }

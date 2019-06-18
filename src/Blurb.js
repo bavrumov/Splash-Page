@@ -25,6 +25,7 @@ class Blurb extends Component {
             </Container>
         return (
             <header className={"App-header"}>
+                <h6>Click to interact:</h6>
                 <AnimatedCollapsible text={blurb}></AnimatedCollapsible>
             </header>
         )

@@ -39,17 +39,17 @@ export default class AnimatedCollapsible extends Component {
     
     render() {
         return (
-            <div>
-            <div onClick={this.toggle}>{this.state.status}</div>
-            <Collapse
-                isOpen={this.state.collapse}
-                onEntering={this.onEntering}
-                onEntered={this.onEntered}
-                onExiting={this.onExiting}
-                onExited={this.onExited}
-            >
-                {this.props.text}
-            </Collapse>
+            <div className="clickable-hover">
+                <div onClick={this.toggle}>{this.state.status}</div>
+                <Collapse
+                    isOpen={this.state.collapse}
+                    onEntering={this.onEntering}
+                    onEntered={this.onEntered}
+                    onExiting={this.onExiting}
+                    onExited={this.onExited}
+                >
+                    {this.props.text}
+                </Collapse>
             </div>
         );
     }
