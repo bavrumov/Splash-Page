@@ -9,6 +9,7 @@ import bc from './logos/uni/BC.jpg';
 import sbu from './logos/uni/SBU.jpg';
 import {Row, Col} from 'reactstrap'
 import classNames from 'classnames';
+import AnimatedCollapsible from './AnimatedCollapsible.js';
 
 // Here, json objects are defined to include pertinent information about schools.
 // They are broken into key:value pairs, with "name" being an example of a key.
@@ -62,7 +63,6 @@ export default class Carousel extends Component {
         backgroundColor: "rgba(255,255,255,0.5)",
         padding: "8%",
         borderRadius: "4px",
-        //opacity: "0.5"
       }
 
         let elements = [];
@@ -84,7 +84,7 @@ export default class Carousel extends Component {
                 <div style={schoolText}>
                  <h3>{schools[i].head}</h3>
                  <hr /> {/*TODO: Make this text a Collapsable dropdown/button */}
-                 <h5>{schools[i].bio}</h5>
+                 <h5><AnimatedCollapsible text={schools[i].bio}></AnimatedCollapsible></h5>
                 </div>
                 
               </Col>
