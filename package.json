@@ -8,6 +8,7 @@
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
+    "react-icons": "^3.7.0",
     "react-scripts": "^3.0.1",
     "reactstrap": "^8.0.0",
     "tachyons-border-radius": "^5.1.3",
