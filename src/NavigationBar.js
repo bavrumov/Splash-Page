@@ -53,7 +53,7 @@ export class NavigationBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#App-body">Bio</NavLink>
+                <NavLink href="#Education">Education</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#Jobs">Work Experience</NavLink>
@@ -62,7 +62,7 @@ export class NavigationBar extends React.Component {
                 <NavLink href="#Hobbies">Hobbies</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#bottom">Socials</NavLink>
+                <NavLink href="#bottom">Contact</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#Resume-link">Resume</NavLink>
