@@ -23,8 +23,12 @@ export class NavigationBar extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.changeTheme = this.changeTheme.bind(this);
+
     this.state = {
-      isOpen: false
+      isOpen: false,
+      themes: ["green-and-blue", "poncho", "pizelex"],
+      theme: "green-and-blue"
     };
   }
   toggle() {
@@ -32,10 +36,19 @@ export class NavigationBar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+  
+  changeTheme(x) {
+    console.log(x);
+    this.setState({
+      theme: this.state.themes[x]
+    });
+  }
   render() {
     return (
         <Navbar id="top" className="navbar sticky-top" color="dark" dark expand="md">
-          <NavbarBrand href="/">Boris Avrumov</NavbarBrand>
+          <NavbarBrand href="/">
+            Boris Avrumov
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -60,17 +73,21 @@ export class NavigationBar extends React.Component {
                   Themes
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
+                  <DropdownItem
+                    onClick={()=>this.changeTheme(0)}>
                     Green and Blue
                   </DropdownItem>
-                  <DropdownItem>
+                  <DropdownItem
+                    onClick={()=>this.changeTheme(1)}>
                     Poncho
                   </DropdownItem>
-                  <DropdownItem>
+                  <DropdownItem
+                    onClick={()=>this.changeTheme(2)}>
                     Pizelex
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
+                  <DropdownItem
+                    onClick={()=>this.changeTheme(parseInt(Math.random()*3))}>
                     Random
                   </DropdownItem>
                 </DropdownMenu>
