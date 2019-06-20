@@ -12,6 +12,7 @@ import {
   DropdownToggle,
   DropdownMenu
 } from 'reactstrap';
+import resume from './assets/resume.pdf';
 
 /* The Navigation Bar component renders a DOM element that provides navigation shortcuts
  *  to the different parts of the page. When the browser isn't wide enough, this component
@@ -63,13 +64,13 @@ export class NavigationBar extends React.Component {
                 <NavLink href="#Jobs">Work Experience</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#Hobbies">Hobbies</NavLink>
+                <NavLink disabled href="#Hobbies">Hobbies</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#bottom">Contact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#Resume-link">Resume</NavLink>
+                <NavLink target="_blank" href={resume}>Resume</NavLink>
               </NavItem>
 
               <UncontrolledDropdown nav inNavbar>
