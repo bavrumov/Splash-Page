@@ -27,10 +27,10 @@ export class NavigationBar extends React.Component {
 
     this.state = {
       isOpen: false,
-      themes: ["green-and-blue", "poncho", "pizelex"],
-      theme: "green-and-blue"
+      selected: [true, false, false],
     };
   }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -38,11 +38,15 @@ export class NavigationBar extends React.Component {
   }
   
   changeTheme(x) {
-    console.log(x);
+    let bools = [false, false, false];
+    bools[x] = true;
+
     this.setState({
-      theme: this.state.themes[x]
+      selected: bools
     });
+    this.props.handleTheme(x); // Calls the parent function passed as a prop
   }
+
   render() {
     return (
         <Navbar id="top" className="navbar sticky-top" color="dark" dark expand="md">
@@ -74,15 +78,18 @@ export class NavigationBar extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem
-                    onClick={()=>this.changeTheme(0)}>
+                    onClick={()=>this.changeTheme(0)}
+                    active={this.state.selected[0]}>
                     Green and Blue
                   </DropdownItem>
                   <DropdownItem
-                    onClick={()=>this.changeTheme(1)}>
+                    onClick={()=>this.changeTheme(1)}
+                    active={this.state.selected[1]}>
                     Poncho
                   </DropdownItem>
                   <DropdownItem
-                    onClick={()=>this.changeTheme(2)}>
+                    onClick={()=>this.changeTheme(2)}
+                    active={this.state.selected[2]}>
                     Pizelex
                   </DropdownItem>
                   <DropdownItem divider />

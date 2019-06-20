@@ -9,15 +9,27 @@ import WorkCards from './WorkCards.js';
 import Carousel from './Carousel.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleTheme = this.handleTheme.bind(this);
+    this.state = {
+      themes: ["green-and-blue", "poncho", "pizelex"],
+      theme: "green-and-blue"
+    };
+  }
+
+  handleTheme(x) {
+    this.setState({
+      theme: this.state.themes[x]
+    });
+  }
+
   render() {
-    //let theme = themes[parseInt(Math.random()*3)];
-    let theme = "green-and-blue";
-    //let theme = "poncho";
-    //let theme = "pizelex";
 
     return (
-      <div className={classNames("App", theme)}>
-        <NavigationBar />
+      <div className={classNames("App", this.state.theme)}>
+        <NavigationBar handleTheme={this.handleTheme}/>
           
         <div className="App-body">
 
