@@ -12,11 +12,11 @@ export default class WorkCards extends Component {
         this.state = {
             companies: [
                 {
-                    name: "BlackRock",
-                    img: BLK,
-                    description: "The world's largest asset management company, with a high standard of ethics and sense of duty to its clients.",
-                    url: "https://www.blackrock.com/corporate",
-                    date: "July 2019 -" 
+                    name: "Retraction Watch",
+                    img: RW,
+                    description: "A blog and database designed to monitor retractions across hundreds of scientific journals.",
+                    url: "http://retractionwatch.com/2010/08/03/why-write-a-blog-about-retractions/",
+                    date: "Dec 2016 - Nov 2017" 
                 },
                 {
                     name: "MVI Systems",
@@ -26,11 +26,11 @@ export default class WorkCards extends Component {
                     date: "Nov 2018 - Mar 2019" 
                 },
                 {
-                    name: "Retraction Watch",
-                    img: RW,
-                    description: "A blog and database designed to monitor retractions across hundreds of scientific journals.",
-                    url: "http://retractionwatch.com/2010/08/03/why-write-a-blog-about-retractions/",
-                    date: "Dec 2016 - Nov 2017" 
+                    name: "BlackRock",
+                    img: BLK,
+                    description: "The world's largest asset management company, with a high standard of ethics and sense of duty to its clients.",
+                    url: "https://www.blackrock.com/corporate",
+                    date: "July 2019 -" 
                 }
             ]
         }
@@ -46,7 +46,7 @@ export default class WorkCards extends Component {
                 </Col>
             )
         })
-        
+
         return (
             <div>
                 <Container>
