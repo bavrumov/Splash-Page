@@ -14,7 +14,7 @@ class Blurb extends Component {
                 </Col>
                 <Col lg={5} sm={6}>
                     Hi! I'm Boris, author of this site. <hr />
-                    I wanted give my audience a visual history of myself, told by my schools, work, and hobbies. Feel free to make your presence known and reach out to me using any of the buttons below!
+                    I wanted to give my audience a visual history of myself, told by my schools, work, and hobbies. Feel free to make your presence known and reach out to me using any of the buttons below!
                     <hr />
                     <Row>
                         <Col xs={8}><Anchor name="Former personal site" url="http://bavrumov.github.io/"></Anchor></Col>

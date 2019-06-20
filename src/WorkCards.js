@@ -46,7 +46,7 @@ export default class WorkCards extends Component {
                 </Col>
             )
         })
-        console.log(this.state);
+        
         return (
             <div>
                 <Container>
