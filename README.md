@@ -1,6 +1,6 @@
 ## New Personal Website
 
-<p>A fun work in progress, showcasing my previous schools, work, contact info, and resume, all in one convenient place.<br><br>
+<p>A fun work in progress, showcasing my previous schools, work, contact info, and resume, all in one convenient place.<br>
 
 `Thanks for stopping by!`
 </p>
