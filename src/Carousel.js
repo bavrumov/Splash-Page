@@ -80,13 +80,12 @@ export default class Carousel extends Component {
                   />
                 </div>
                 <br />
-                <h2>{schools[i].name}</h2>
+                <h3 style={{minHeight:"4em"}}>{schools[i].name}</h3>
                 <div style={schoolText}>
-                 <h3>{schools[i].head}</h3>
-                 <hr /> {/*TODO: Make this text a Collapsable dropdown/button */}
+                 <h4 style={{minHeight:"4em", padding:"3%"}}>{schools[i].head}</h4>
+                 <hr />
                  <h5><AnimatedCollapsible text={schools[i].bio}></AnimatedCollapsible></h5>
                 </div>
-                
               </Col>
              )
         }
