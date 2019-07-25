@@ -39,7 +39,7 @@ export default class AnimatedCollapsible extends Component {
     
     render() {
         return (
-            <div className="clickable-hover">
+            <div className="clickable-hover" onClick={this.props.onClick}> {/*allows passing an onclick as a prop from parent*/}
                 <div onClick={this.toggle}>{this.state.status}</div>
                 <Collapse
                     isOpen={this.state.collapse}
@@ -48,7 +48,7 @@ export default class AnimatedCollapsible extends Component {
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                 >
-                    {this.props.text}
+                    <span className="unclickable">{this.props.text}</span>
                 </Collapse>
             </div>
         );

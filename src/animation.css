@@ -28,3 +28,7 @@
   .clickable-hover:hover {
     cursor: pointer;
   }
+
+  .unclickable:hover {
+    cursor: default;
+  }
