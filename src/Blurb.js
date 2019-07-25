@@ -6,7 +6,29 @@ import AnimatedCollapsible from './AnimatedCollapsible.js'
 
 class Blurb extends Component {
     
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            helper: true,
+        }
+
+        this.vanishInstructions = this.vanishInstructions.bind(this);
+    }
+
+    vanishInstructions() {
+        this.setState({
+            helper: false
+        });
+    }
+
     render() {
+        let instruction;
+        if (this.state.helper)
+            instruction = <h6>Click "{String.fromCharCode(0x2335)}" to interact</h6>
+        else
+            instruction = "";
+
         let blurb = <Container fluid={true}>
                 <Row>
                 <Col lg={{size:3, offset:2}} sm={{size:4, offset:1}}>
@@ -21,12 +43,12 @@ class Blurb extends Component {
                         <Col xs={4}><Anchor name="Email me" url="mailto:bavrumov@hotmail.com"></Anchor></Col>
                     </Row>
                 </Col>
-                </Row>
+                </Row><br />
             </Container>
         return (
             <header className={"App-header"}>
-                <h6>Click to interact:</h6>
-                <AnimatedCollapsible text={blurb}></AnimatedCollapsible>
+                {instruction}
+                <AnimatedCollapsible onClick={this.vanishInstructions} text={blurb}></AnimatedCollapsible>
             </header>
         )
     }
