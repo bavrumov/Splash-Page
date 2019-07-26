@@ -28,9 +28,9 @@ export default class WorkCards extends Component {
                 {
                     name: "BlackRock",
                     img: BLK,
-                    description: "The world's largest asset management company, with a high standard of ethics and sense of duty to its clients.",
+                    description: "The world's largest asset management firm, with a high standard of ethics and sense of duty to its clients.",
                     url: "https://www.blackrock.com/corporate",
-                    date: "July 2019 -" 
+                    date: "July 2019 - " 
                 }
             ]
         }

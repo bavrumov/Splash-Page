@@ -11,19 +11,19 @@ export default class ExperienceCard extends Component {
     //     description: PropTypes.string,  // Card Footer
     //     date: PropTypes.string,         // Optional Header
     // }
-
+    
     render() {
         const footerStyle = {
             fontSize: '0.8em'
         }
-
+    
         return (
             <div>
             <Card>
                 <CardHeader><Anchor name={this.props.item.name} url={this.props.item.url}></Anchor></CardHeader>
                 <CardImg top width="100%" src={this.props.item.img} alt={this.props.name} />
                 <CardBody>
-                    <CardTitle>{this.props.item.date}</CardTitle>
+                    <CardTitle>{(this.props.item.date).padEnd(19, '\u00A0')}</CardTitle>
                     <CardSubtitle>{this.props.item.subtitle}</CardSubtitle>
                     <CardText>{this.props.item.text}</CardText>
                     <CardFooter style={footerStyle}>{this.props.item.description}</CardFooter>
