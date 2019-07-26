@@ -7,8 +7,7 @@ import Tachyonsocialfooter from './Tachyonsocialfooter.js'
 import { Container, Row, Col } from 'reactstrap';
 import WorkCards from './WorkCards.js';
 import Carousel from './Carousel.js';
-//Animation library import and CSS
-import AOS from 'aos';
+import AOS from 'aos'; //Animation library import and CSS
 import 'aos/dist/aos.css';
 import FadedHeader from './FadedHeader.js'
 import Portrait from './Portrait.js';
@@ -83,10 +82,11 @@ class App extends Component {
           <FadedHeader title="Projects" side="left" fade="right"></FadedHeader>
           <Container id="Projects">
             <Row className="padded-top">
-              <h2>Projects will go here.</h2>
+              <h2>Projects will go here. Work in progress...</h2>
               {/* More Content Here */}
             </Row>
           </Container>
+          <div style={{minHeight:"3em"}}></div>
 
         </div>
         <Blurb />
