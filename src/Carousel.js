@@ -70,7 +70,7 @@ export default class Carousel extends Component {
 
         for(let i = 0; i < schools.length; i++) {
              elements.push(
-             <Col xs={12} sm={6} md={3} key={i}>
+             <Col xs={12} sm={6} md={3} key={i} data-aos="fade-up" data-aos-duration="1200">
                 <div style = {{width:"100%", paddingTop:"1em"}}>
                   <img
                   className = {classNames("rounded-image", "shadow-img")}

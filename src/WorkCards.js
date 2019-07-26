@@ -36,12 +36,11 @@ export default class WorkCards extends Component {
         }
     }
     
-
     render() {
 
         let companyCards = this.state.companies.map((company, i) => {
             return (
-                <Col key={i} md="4">
+                <Col data-aos="flip-up" key={i} md="4">
                     <ExperienceCard item={company}></ExperienceCard>
                 </Col>
             )
