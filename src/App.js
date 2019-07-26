@@ -10,6 +10,8 @@ import Carousel from './Carousel.js';
 //Animation library import and CSS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FadedHeader from './FadedHeader.js'
+import Portrait from './Portrait.js';
 
 class App extends Component {
   constructor(props) {
@@ -24,7 +26,6 @@ class App extends Component {
   componentDidMount(){
     AOS.init({
       duration : 1800,
-      once: true,
     })
   }
 
@@ -42,34 +43,47 @@ class App extends Component {
           
         <div className="App-body">
 
+          <div style={{minHeight:"3em"}}></div>
+
+          <FadedHeader title="Hi! My name is" side="right" fade="left"></FadedHeader>
           <Container id="App-body">
             <Row className="padded-top">
-              {/* More Content Here */}
+              <Col lg={{size:4, offset:1}} sm={{size:4, offset:1, order:1}} xs={{order:12}}>
+                <div data-aos="flip-left"><Portrait></Portrait></div>
+              </Col>
+              <Col data-aos="flip-right" lg={{size:5, offset:1}} sm={{size:6, order:12}} xs={{order:1}}>
+                <h1>Boris Avrumov</h1> <hr />
+                I'm a software engineer based in NYC. My full time job is Responsible Older Brother and Eldest Child™, but recently I've also taken up employment as an Analyst at BlackRock.<br />
+                <hr />
+              </Col>
             </Row>
           </Container>
 
-          <header data-aos="fade-left" className={classNames("App-header", "slide-header", "right")}>Education</header>
+          <div style={{minHeight:"3em"}}></div>
+
+          <FadedHeader title="Education" side="left" fade="right"></FadedHeader>
           <Container id="Education">
-            <Row className="padded-top">
+            <Row data-aos="fade-up" className="padded-top">
               <Carousel></Carousel>
             </Row>
           </Container>
-          <br /><br />
+          <br />
+          <div style={{minHeight:"3em"}}></div>
 
-
-          <header data-aos="fade-right" className={classNames("App-header", "slide-header", "left")}>Work Experience</header><br />
+          <FadedHeader title="Work Experience" side="left" fade="right"></FadedHeader>
           <Container id="Jobs">
             <Row className="padded-top">
-              <Col>
+              <Col data-aos="flip-up">
                 <WorkCards></WorkCards>
               </Col>
             </Row>
           </Container>
           <br /><br />
 
-          <header data-aos="fade-left" className={classNames("App-header", "slide-header", "right")}>Hobbies</header>
-          <Container id="Hobbies">
+          <FadedHeader title="Projects" side="left" fade="right"></FadedHeader>
+          <Container id="Projects">
             <Row className="padded-top">
+              <h2>Projects will go here.</h2>
               {/* More Content Here */}
             </Row>
           </Container>
