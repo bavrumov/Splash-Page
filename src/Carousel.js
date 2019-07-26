@@ -1,8 +1,4 @@
-// The following lines import the photos of the team,
-// as well as the Row and Column components from the reactstrap library.
-
 import React, { Component } from 'react'
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import bths from './logos/uni/BTHS.jpg';
 import mhc from './logos/uni/MHC.png';
 import bc from './logos/uni/BC.jpg';
@@ -38,13 +34,11 @@ const brooklyn= {
 const stony= {
     name: 'Stony Brook University',
     head: "What's a Seawolf?",
-    bio: "A home away from home, I commuted to this campus every month to visit old friends (and make new ones). Brookfest, Homecoming, Senior Ball, & Pipettes Invitationals are just some of my treasured memories of this school.",
+    bio: "A vacation home, I commuted to this campus every month to visit old friends (and make new ones). Brookfest, Senior Ball, Homecoming, & Pipettes Invitationals are just some of my treasured memories of this school.",
     pic: sbu
 }
 
-
 var schools = [tech, brooklyn, macaulay, stony];
-
 
 /* The Carousel component renders a DOM element that contains all of the team's information.
  *
@@ -69,8 +63,9 @@ export default class Carousel extends Component {
         
 
         for(let i = 0; i < schools.length; i++) {
-             elements.push(
-             <Col xs={12} sm={6} md={3} key={i} data-aos="fade-up" data-aos-duration="1200">
+            let duration = 900 + i * 450; // Creates staircase effect
+            elements.push(
+             <Col xs={12} sm={6} md={3} key={i} data-aos="fade-up" data-aos-duration={duration}>
                 <div style = {{width:"100%", paddingTop:"1em"}}>
                   <img
                   className = {classNames("rounded-image", "shadow-img")}
@@ -87,7 +82,7 @@ export default class Carousel extends Component {
                  <h5><AnimatedCollapsible text={schools[i].bio}></AnimatedCollapsible></h5>
                 </div>
               </Col>
-             )
+            )
         }
         return elements;
     }
