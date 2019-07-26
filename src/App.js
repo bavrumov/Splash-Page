@@ -45,6 +45,7 @@ class App extends Component {
           <div style={{minHeight:"3em"}}></div>
 
           <FadedHeader title="Hi! My name is" side="right" fade="left"></FadedHeader>
+            <br />
           <Container id="App-body">
             <Row className="padded-top">
               <Col lg={{size:4, offset:1}} sm={{size:4, offset:1, order:1}} xs={{order:12}}>
@@ -62,34 +63,39 @@ class App extends Component {
 
           <FadedHeader title="Education" side="left" fade="right"></FadedHeader>
           <Container id="Education">
-            <Row data-aos="fade-up" className="padded-top">
-              <Carousel></Carousel>
+            <Row className="padded-top">
+              <Carousel></Carousel> {/* Moved data-aos to component*/}
             </Row>
           </Container>
-          <br />
+            <br />
           <div style={{minHeight:"3em"}}></div>
 
           <FadedHeader title="Work Experience" side="left" fade="right"></FadedHeader>
+          <br />
           <Container id="Jobs">
             <Row className="padded-top">
-              <Col data-aos="flip-up">
-                <WorkCards></WorkCards>
+              <Col>
+                <WorkCards></WorkCards> {/* Moved data-aos to component*/}
               </Col>
             </Row>
           </Container>
-          <br /><br />
+            <br /><br />
 
           <FadedHeader title="Projects" side="left" fade="right"></FadedHeader>
+            <br />
           <Container id="Projects">
             <Row className="padded-top">
-              <h2>Projects will go here. Work in progress...</h2>
+              <h2>Projects will go here. Coming soon!</h2>
               {/* More Content Here */}
             </Row>
           </Container>
+
           <div style={{minHeight:"3em"}}></div>
 
         </div>
+
         <Blurb />
+
         <div id="bottom"> <hr/>
           <Tachyonsocialfooter></Tachyonsocialfooter>
         </div>
