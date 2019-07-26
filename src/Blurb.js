@@ -32,10 +32,10 @@ class Blurb extends Component {
         let blurb = <Container fluid={true}>
                 <Row>
                 <Col lg={{size:3, offset:2}} sm={{size:4, offset:1}}>
-                    <Portrait></Portrait>
+                    <Portrait name="fun"></Portrait>
                 </Col>
                 <Col lg={5} sm={6}>
-                    Hi! I'm Boris, author of this site. <hr />
+                    Why does this site exist, you ask? <hr />
                     I wanted to give my audience a visual history of myself, told by my schools, work, and hobbies. Feel free to make your presence known and reach out to me using any of the buttons below!
                     <hr />
                     <Row>
