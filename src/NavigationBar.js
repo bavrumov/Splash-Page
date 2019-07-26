@@ -64,7 +64,7 @@ export class NavigationBar extends React.Component {
                 <NavLink href="#Jobs">Work Experience</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink disabled href="#Hobbies">Hobbies</NavLink>
+                <NavLink href="#Projects">Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#bottom">Contact</NavLink>
