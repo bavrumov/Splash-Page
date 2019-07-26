@@ -25,7 +25,7 @@ class Blurb extends Component {
     render() {
         let instruction;
         if (this.state.helper)
-            instruction = <h6>Click "{String.fromCharCode(0x2335)}" for info</h6>
+            instruction = <h6>Click {String.fromCharCode(0x2335)} for info</h6>
         else
             instruction = "";
 

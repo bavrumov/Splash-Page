@@ -16,9 +16,8 @@
 .slide-header {
   width: 66%;
   position: absolute;
-  
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,91,1) 35%, rgba(40,44,52,1) 100%); 
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,91,1) 35%, rgba(40,44,52,1) 100%); 
 }
 
 .left {
@@ -51,7 +50,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,91,1) 35%, rgba
 .image-container {
   display: inline-block;
   width: 50%;
-  /* border: 1px solid red;  */
 }
 
 .rounded-image {
@@ -82,5 +80,4 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,91,1) 35%, rgba
   background: #114357;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
