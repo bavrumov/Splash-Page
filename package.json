@@ -2,10 +2,12 @@
   "name": "splashpage",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://www.borisavrumov.com",
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
@@ -24,6 +26,8 @@
     "tachyons-widths": "^5.2.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
