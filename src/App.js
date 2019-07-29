@@ -11,6 +11,7 @@ import AOS from 'aos'; //Animation library import and CSS
 import 'aos/dist/aos.css';
 import FadedHeader from './FadedHeader.js'
 import Portrait from './Portrait.js';
+import Anchor from './Anchor.js'
 
 class App extends Component {
   constructor(props) {
@@ -85,8 +86,8 @@ class App extends Component {
             <br />
           <Container id="Projects">
             <Row className="padded-top">
-              <h2>Projects will go here. Coming soon!</h2>
-              {/* More Content Here */}
+              <h2>Projects will go here. Coming soon! <br /> In the meantime you can 
+              <Anchor name="find them here." url="https://github.com/bavrumov?tab=repositories"/></h2>
             </Row>
           </Container>
 
