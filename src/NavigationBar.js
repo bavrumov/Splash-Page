@@ -25,6 +25,7 @@ export class NavigationBar extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.changeTheme = this.changeTheme.bind(this);
+    this.closeNavbar = this.closeNavbar.bind(this);
 
     this.state = {
       isOpen: false,
@@ -48,6 +49,12 @@ export class NavigationBar extends React.Component {
     this.props.handleTheme(x); // Calls the parent function passed as a prop
   }
 
+  closeNavbar() {
+    this.setState({
+      isOpen: false
+    });
+  }
+
   render() {
     return (
         <Navbar id="top" className="navbar sticky-top" color="dark" dark expand="md">
@@ -58,16 +65,16 @@ export class NavigationBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#Education">Education</NavLink>
+                <NavLink href="#Education" onClick={this.closeNavbar}>Education</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#Jobs">Work Experience</NavLink>
+                <NavLink href="#Jobs" onClick={this.closeNavbar}>Work Experience</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#Projects">Projects</NavLink>
+                <NavLink href="#Projects" onClick={this.closeNavbar}>Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#bottom">Contact</NavLink>
+                <NavLink href="#bottom" onClick={this.closeNavbar}>Contact</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink target="_blank" href={resume}>Resume</NavLink>
