@@ -17,18 +17,18 @@ const tech= {
     pic: bths
 }
 
+const brooklyn= {
+  name: 'Brooklyn College',
+  head: "My main campus.",
+  bio: "This is where I took a bulk of my classes, went to the gym, and eagerly powered through my Computer Science education. By senior year, I tutored a handful of students and gained a network of aspiring professionals.",
+  pic: bc
+}
+
 const macaulay= {
     name: 'Macaulay Honors College',
     head: "My lifeline and sponsor.",
     bio: "Aside from providing me a free education and laptop, Macaulay pushed me to take honors classes, maintain a high GPA, volunteer, and intern. They house amazing staff who helped push me in the right career direction.",
     pic: mhc
-}
-
-const brooklyn= {
-    name: 'Brooklyn College',
-    head: "My main campus.",
-    bio: "This is where I took a bulk of my classes, went to the gym, and eagerly powered through my Computer Science education. By senior year, I tutored a handful of students and gained a network of eager professionals.",
-    pic: bc
 }
 
 const stony= {
