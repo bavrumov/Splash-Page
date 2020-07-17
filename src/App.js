@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import FadedHeader from './FadedHeader.js'
 import Portrait from './Portrait.js';
 import Anchor from './Anchor.js'
+import PayPalDonateButton from './PayPalDonateButton.js'
 
 class App extends Component {
   constructor(props) {
@@ -88,7 +89,11 @@ class App extends Component {
           <Container id="Projects">
             <Row className="padded-top">
               <h2>Projects will go here. Coming soon! <br /> In the meantime you can 
-              <Anchor name="find them here." url="https://github.com/bavrumov?tab=repositories"/></h2>
+              <Anchor name="find them here," url="https://github.com/bavrumov?tab=repositories"/>
+              or get in touch below and donate a ☕</h2>
+            </Row>
+            <Row>
+              <PayPalDonateButton></PayPalDonateButton>
             </Row>
           </Container>
 
