@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Collapse,
   Navbar,
@@ -19,7 +19,7 @@ import resume from './assets/resume.pdf';
  *  also collapses into a mobile-friendly "hamburger menu" which toggles on and off.
  */
 
-export class NavigationBar extends React.Component {
+export class NavigationBar extends Component {
   constructor(props) {
     super(props);
 
