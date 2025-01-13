@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import me from './assets/me.jpg'
+import me from './assets/me2.jpg'
 import fun from './assets/fun.gif'
 
 class Portrait extends Component {
