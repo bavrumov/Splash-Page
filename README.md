@@ -1,12 +1,11 @@
-## New Personal Website
+## New Personal Website: [BorisAvrumov.com](https://www.borisavrumov.com)
 
-<p>A fun work in progress, showcasing my previous schools, work, contact info, and resume, all in one convenient place.<br>
-
-`Thanks for stopping by!`
+<p>A fun work in progress, showcasing my previous schools, work, contact info, and resume, all in one convenient place.
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Thanks for stopping by!
 ## Available Scripts
 
 In the project directory, you can run:
