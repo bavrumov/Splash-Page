@@ -10,31 +10,31 @@ import AnimatedCollapsible from './AnimatedCollapsible.js';
 // Here, json objects are defined to include pertinent information about schools.
 // They are broken into key:value pairs, with "name" being an example of a key.
 
-const tech= {
+const tech = {
     name: 'Brooklyn Tech High School',
     head: "Where it all began.",
     bio: "I was introduced to coding in the Software Engineering major, made amazing lifelong friends, and learned HTML, CSS, JS, PHP, SQL, and Java. I graduated in 2015, when jQuery was a hot and new thing. Wait, what's ES6?",
     pic: bths
 }
 
-const brooklyn= {
+const brooklyn = {
   name: 'Brooklyn College',
   head: "My main campus.",
   bio: "This is where I took a bulk of my classes, went to the gym, and eagerly powered through my Computer Science education. By senior year, I tutored a handful of students and gained a network of aspiring professionals.",
   pic: bc
 }
 
-const macaulay= {
+const macaulay = {
     name: 'Macaulay Honors College',
     head: "My lifeline and sponsor.",
     bio: "Aside from providing me a free education and laptop, Macaulay pushed me to take honors classes, maintain a high GPA, volunteer, and intern. They house amazing staff who helped push me in the right career direction.",
     pic: mhc
 }
 
-const stony= {
+const stony = {
     name: 'Stony Brook University',
     head: "What's a Seawolf?",
-    bio: "A vacation home, I commuted to this campus every month to visit old friends (and make new ones). Brookfest, Senior Ball, Homecoming, & Pipettes Invitationals are just some of my treasured memories of this school.",
+    bio: "I commuted to this campus every month to visit my lovely girlfriend. Going to Brookfest, Senior Ball, Homecoming, & Pipettes Invitationals with her are my most treasured memories of this school, a home away from home.",
     pic: sbu
 }
 
