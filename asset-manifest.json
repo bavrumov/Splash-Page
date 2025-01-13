@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0b8dff5.chunk.css",
-    "main.js": "/static/js/main.f7e6cf9e.chunk.js",
-    "main.js.map": "/static/js/main.f7e6cf9e.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.f84f1ed1.chunk.css": "/static/css/2.f84f1ed1.chunk.css",
-    "static/js/2.b7619a04.chunk.js": "/static/js/2.b7619a04.chunk.js",
-    "static/js/2.b7619a04.chunk.js.map": "/static/js/2.b7619a04.chunk.js.map",
+    "main.css": "/static/css/main.45528571.css",
+    "main.js": "/static/js/main.a929aac1.js",
+    "static/media/me2.jpg": "/static/media/me2.4c06d1c042ce07d6764f.jpg",
+    "static/media/fun.gif": "/static/media/fun.7481479ba078cfd90d06.gif",
+    "static/media/SBU.jpg": "/static/media/SBU.75f25644b56c6a82669a.jpg",
+    "static/media/resume2024.pdf": "/static/media/resume2024.4b744b8382bdae63a433.pdf",
+    "static/media/amazon.png": "/static/media/amazon.2ab2fccb4936e8b0725a.png",
+    "static/media/MVI.jpg": "/static/media/MVI.721feec5bbbfc1b304cd.jpg",
+    "static/media/BLK.jpg": "/static/media/BLK.d25402b683016fe806c4.jpg",
+    "static/media/BC.jpg": "/static/media/BC.76567d267e45886f3f82.jpg",
+    "static/media/MHC.png": "/static/media/MHC.fa4e2cc4c818ee956523.png",
+    "static/media/SH.png": "/static/media/SH.6c75a14be2042490e105.png",
+    "static/media/BTHS.jpg": "/static/media/BTHS.80eea7a7aa4624bd19b7.jpg",
     "index.html": "/index.html",
-    "precache-manifest.33e4101087811188411bd88b3978a1a4.js": "/precache-manifest.33e4101087811188411bd88b3978a1a4.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.f84f1ed1.chunk.css.map": "/static/css/2.f84f1ed1.chunk.css.map",
-    "static/css/main.a0b8dff5.chunk.css.map": "/static/css/main.a0b8dff5.chunk.css.map",
-    "static/media/BC.jpg": "/static/media/BC.d69128e1.jpg",
-    "static/media/BLK.jpg": "/static/media/BLK.1df60c7f.jpg",
-    "static/media/BTHS.jpg": "/static/media/BTHS.9670386e.jpg",
-    "static/media/MHC.png": "/static/media/MHC.51cabc19.png",
-    "static/media/MVI.jpg": "/static/media/MVI.625d3b9b.jpg",
-    "static/media/SBU.jpg": "/static/media/SBU.4955aef8.jpg",
-    "static/media/fun.gif": "/static/media/fun.4a696275.gif",
-    "static/media/me.jpg": "/static/media/me.1aad4f47.jpg",
-    "static/media/resume.pdf": "/static/media/resume.1d55b517.pdf"
-  }
+    "main.45528571.css.map": "/static/css/main.45528571.css.map",
+    "main.a929aac1.js.map": "/static/js/main.a929aac1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45528571.css",
+    "static/js/main.a929aac1.js"
+  ]
 }
