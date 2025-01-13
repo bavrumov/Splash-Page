@@ -12,7 +12,7 @@ import {
   DropdownToggle,
   DropdownMenu
 } from 'reactstrap';
-import resume from './assets/resume.pdf';
+import resume from './assets/resume2024.pdf';
 
 /* The Navigation Bar component renders a DOM element that provides navigation shortcuts
  *  to the different parts of the page. When the browser isn't wide enough, this component
