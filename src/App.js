@@ -55,22 +55,14 @@ class App extends Component {
               </Col>
               <Col data-aos="flip-right" lg={{size:5, offset:1}} sm={{size:6, order:12}} xs={{order:1}}>
                 <h1>Boris Avrumov</h1> <hr />
-                I'm a software engineer based in NYC. My full time job is Responsible Older Brother and Eldest Child™, 
-                but recently I've also taken up employment as an Analyst at BlackRock as part of the Aladdin Product Group.<br />
+                I am a software engineer based in NYC. I've got over 5 years of experience in software development, mainly in FinTech.
+                <br /><br />
+                Currently I work as an SDE 2 at Amazon. Feel free to ask me professional questions, or about personal finance!<br />
                 <hr />
               </Col>
             </Row>
           </Container>
 
-          <div style={{minHeight:"3em"}}></div>
-
-          <FadedHeader title="Education" side="left" fade="right"></FadedHeader>
-          <Container id="Education">
-            <Row className="padded-top">
-              <Carousel></Carousel> {/* Moved data-aos to component*/}
-            </Row>
-          </Container>
-            <br />
           <div style={{minHeight:"3em"}}></div>
 
           <FadedHeader title="Work Experience" side="left" fade="right"></FadedHeader>
@@ -80,6 +72,15 @@ class App extends Component {
               <Col>
                 <WorkCards></WorkCards> {/* Moved data-aos to component*/}
               </Col>
+            </Row>
+          </Container>
+            <br />
+          <div style={{minHeight:"3em"}}></div>
+
+          <FadedHeader title="Education" side="left" fade="right"></FadedHeader>
+          <Container id="Education">
+            <Row className="padded-top">
+              <Carousel></Carousel> {/* Moved data-aos to component*/}
             </Row>
           </Container>
             <br /><br />

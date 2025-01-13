@@ -64,11 +64,11 @@ export class NavigationBar extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="#Education" onClick={this.closeNavbar}>Education</NavLink>
+            <NavItem>
+                <NavLink href="#Jobs" onClick={this.closeNavbar}>Work Experience</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#Jobs" onClick={this.closeNavbar}>Work Experience</NavLink>
+                <NavLink href="#Education" onClick={this.closeNavbar}>Education</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#Projects" onClick={this.closeNavbar}>Projects</NavLink>
