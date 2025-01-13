@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import ExperienceCard from './ExperienceCard.js';
+import AZ from './logos/amazon.png';
+import SH from './logos/SH.png';
 import BLK from './logos/BLK.jpg';
 import MVI from './logos/MVI.jpg';
 import RW from './logos/RWC.jpg';
@@ -12,25 +14,39 @@ export default class WorkCards extends Component {
         this.state = {
             companies: [
                 {
-                    name: "Retraction Watch",
-                    img: RW,
-                    description: "A blog and database designed to monitor retractions across hundreds of scientific journals.",
-                    url: "http://retractionwatch.com/2010/08/03/why-write-a-blog-about-retractions/",
-                    date: "Dec 2016 - Nov 2017" 
+                    name: "Amazon",
+                    img: AZ,
+                    description: "Earth's most customer-centric company. As a decades-long customer myself, I am excited to start my new role in the Amazon Traffic Engineering team.",
+                    url: "https://www.aboutamazon.com/about-us",
+                    date: "Feb 2025 - "
                 },
                 {
-                    name: "MVI Systems",
-                    img: MVI,
-                    description: "A software company focused on video intercom products for residents and property management.",
-                    url: "https://www.mvisystems.com/about",
-                    date: "Nov 2018 - Mar 2019" 
+                    name: "StubHub",
+                    img: SH,
+                    description: "Largest global secondary market for tickets to live events. I handled reconciliation and the month-end accounting process for Viagogo and StubHub entities.",
+                    url: "https://www.stubhub.com/about",
+                    date: "Feb 2024 - Jan 2025"
                 },
                 {
                     name: "BlackRock",
                     img: BLK,
-                    description: "The world's largest asset management firm, with a high standard of ethics and sense of duty to its clients.",
+                    description: "The world's largest asset management firm. I worked accross the Aladdin platform on many teams, including ETFs, Trading, Reconciliation, and API Tools.",
                     url: "https://www.blackrock.com/corporate",
-                    date: "July 2019 - " 
+                    date: "July 2019 - Feb 2024"
+                },
+                {
+                    name: "MVI Systems",
+                    img: MVI,
+                    description: "A software startup focused on video intercom products for residents and property managers. I made fullstack contributions on the management dashboard webapp.",
+                    url: "https://www.mvisystems.com/about",
+                    date: "Nov 2018 - Mar 2019"
+                },
+                {
+                    name: "Retraction Watch",
+                    img: RW,
+                    description: "A blog and database designed to monitor retractions across hundreds of scientific journals. Data entry was my main role, with some scripts to automate the process.",
+                    url: "http://retractionwatch.com/2010/08/03/why-write-a-blog-about-retractions/",
+                    date: "Dec 2016 - Nov 2017"
                 }
             ]
         }
