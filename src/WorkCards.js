@@ -16,9 +16,9 @@ export default class WorkCards extends Component {
                 {
                     name: "Amazon",
                     img: AZ,
-                    description: "Earth's most customer-centric company. As a decades-long customer myself, I am excited to start my new role in the Amazon Traffic Engineering team.",
+                    description: "Earth's most customer-centric company. Here, I work on the Traffic Engineering team, providing connectivity and reliability for AWS services worldwide.",
                     url: "https://www.aboutamazon.com/about-us",
-                    date: "Feb 2025 - "
+                    date: "Jan 2025 - "
                 },
                 {
                     name: "StubHub",

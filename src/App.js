@@ -55,7 +55,7 @@ class App extends Component {
               </Col>
               <Col data-aos="flip-right" lg={{size:5, offset:1}} sm={{size:6, order:12}} xs={{order:1}}>
                 <h1>Boris Avrumov</h1> <hr />
-                I am a software engineer based in NYC. I've got over 5 years of experience in software development, mainly in FinTech.
+                I am a software engineer based in NYC. I've got over 6 years of experience in software development, mainly in FinTech and AWS.
                 <br /><br />
                 Currently I work as an SDE 2 at Amazon. Feel free to ask me professional questions, or about personal finance!<br />
                 <hr />
