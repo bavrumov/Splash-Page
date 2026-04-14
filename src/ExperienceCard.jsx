@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Anchor from './Anchor.js';
+import Anchor from './Anchor.jsx';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, CardHeader, CardFooter } from 'reactstrap';
 
