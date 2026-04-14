@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import { NavigationBar } from './NavigationBar.js';
-import Blurb from './Blurb.js';
+import { NavigationBar } from './NavigationBar.jsx';
+import Blurb from './Blurb.jsx';
 import classNames from 'classnames';
 import './App.css';
-import Tachyonsocialfooter from './Tachyonsocialfooter.js'
+import Tachyonsocialfooter from './Tachyonsocialfooter.jsx'
 import { Container, Row, Col } from 'reactstrap';
-import WorkCards from './WorkCards.js';
-import Carousel from './Carousel.js';
+import WorkCards from './WorkCards.jsx';
+import Carousel from './Carousel.jsx';
 import AOS from 'aos'; //Animation library import and CSS
 import 'aos/dist/aos.css';
-import FadedHeader from './FadedHeader.js'
-import Portrait from './Portrait.js';
-import Anchor from './Anchor.js'
-import PayPalDonateButton from './PayPalDonateButton.js'
+import FadedHeader from './FadedHeader.jsx'
+import Portrait from './Portrait.jsx';
+import Anchor from './Anchor.jsx'
+import PayPalDonateButton from './PayPalDonateButton.jsx'
 
 class App extends Component {
   constructor(props) {

@@ -5,7 +5,7 @@ import bc from './logos/uni/BC.jpg';
 import sbu from './logos/uni/SBU.jpg';
 import {Row, Col} from 'reactstrap'
 import classNames from 'classnames';
-import AnimatedCollapsible from './AnimatedCollapsible.js';
+import AnimatedCollapsible from './AnimatedCollapsible.jsx';
 
 // Here, json objects are defined to include pertinent information about schools.
 // They are broken into key:value pairs, with "name" being an example of a key.

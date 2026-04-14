@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Container, Row, Col} from 'reactstrap';
-import Portrait from './Portrait.js';
-import Anchor from './Anchor.js';
-import AnimatedCollapsible from './AnimatedCollapsible.js'
+import Portrait from './Portrait.jsx';
+import Anchor from './Anchor.jsx';
+import AnimatedCollapsible from './AnimatedCollapsible.jsx'
 
 class Blurb extends Component {
     

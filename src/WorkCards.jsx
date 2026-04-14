@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Container, Row, Col} from 'reactstrap';
-import ExperienceCard from './ExperienceCard.js';
+import ExperienceCard from './ExperienceCard.jsx';
 import AZ from './logos/amazon.png';
 import SH from './logos/SH.png';
 import BLK from './logos/BLK.jpg';

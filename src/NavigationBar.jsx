@@ -63,7 +63,7 @@ export class NavigationBar extends Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ms-auto" navbar>
             <NavItem>
                 <NavLink href="#Jobs" onClick={this.closeNavbar}>Work Experience</NavLink>
               </NavItem>
@@ -84,7 +84,7 @@ export class NavigationBar extends Component {
                 <DropdownToggle nav caret>
                   Themes
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu end>
                   <DropdownItem
                     onClick={()=>this.changeTheme(0)}
                     active={this.state.selected[0]}>
