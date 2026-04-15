@@ -25,10 +25,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Configure git identity
+      - name: Configure git identity and credentials
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and deploy
         run: npm run deploy
