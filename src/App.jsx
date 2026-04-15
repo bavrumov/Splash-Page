@@ -13,6 +13,7 @@ import FadedHeader from './FadedHeader.jsx'
 import Portrait from './Portrait.jsx';
 import Anchor from './Anchor.jsx'
 import PayPalDonateButton from './PayPalDonateButton.jsx'
+import ProjectCards from './ProjectCards.jsx'
 
 class App extends Component {
   constructor(props) {
@@ -89,9 +90,9 @@ class App extends Component {
             <br />
           <Container id="Projects">
             <Row className="padded-top">
-              <h2>Projects will go here. Coming soon! <br /> In the meantime you can 
-              <Anchor name="find them here," url="https://github.com/bavrumov?tab=repositories"/>
-              or get in touch below and donate a ☕</h2>
+              <Col>
+                <ProjectCards></ProjectCards>
+              </Col>
             </Row>
             <Row>
               <PayPalDonateButton></PayPalDonateButton>

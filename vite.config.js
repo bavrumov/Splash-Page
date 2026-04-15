@@ -6,4 +6,8 @@ export default defineConfig({
   base: '/',
   // Allow PDF files (e.g. resume) to be imported as asset URLs
   assetsInclude: ['**/*.pdf'],
+  server: {
+    // Allow any external host (e.g. cloudflared tunnel domains) to proxy to the dev server
+    allowedHosts: true,
+  },
 })
