@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 import Portrait from './Portrait.jsx';
 import Anchor from './Anchor.jsx';
 import AnimatedCollapsible from './AnimatedCollapsible.jsx'
+import PayPalDonateButton from './PayPalDonateButton.jsx'
 
 class Blurb extends Component {
     
@@ -39,8 +40,8 @@ class Blurb extends Component {
                     I wanted to give my audience a visual history of myself, told by my schools, work, and projects. Feel free to make your presence known and reach out to me using any of the buttons below!
                     <hr />
                     <Row>
-                        <Col xs={8}><Anchor name="Former personal site" url="http://bavrumov.github.io/"></Anchor></Col>
                         <Col xs={4}><Anchor name="Email me" url="mailto:bavrumov@hotmail.com"></Anchor></Col>
+                        <Col xs={8}><PayPalDonateButton></PayPalDonateButton></Col>
                     </Row>
                 </Col>
                 </Row><br />
