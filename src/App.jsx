@@ -12,7 +12,6 @@ import 'aos/dist/aos.css';
 import FadedHeader from './FadedHeader.jsx'
 import Portrait from './Portrait.jsx';
 import Anchor from './Anchor.jsx'
-import PayPalDonateButton from './PayPalDonateButton.jsx'
 import ProjectCards from './ProjectCards.jsx'
 
 class App extends Component {
@@ -78,14 +77,6 @@ class App extends Component {
             <br />
           <div style={{minHeight:"3em"}}></div>
 
-          <FadedHeader title="Education" side="left" fade="right"></FadedHeader>
-          <Container id="Education">
-            <Row className="padded-top">
-              <Carousel></Carousel> {/* Moved data-aos to component*/}
-            </Row>
-          </Container>
-            <br /><br />
-
           <FadedHeader title="Projects" side="left" fade="right"></FadedHeader>
             <br />
           <Container id="Projects">
@@ -94,10 +85,17 @@ class App extends Component {
                 <ProjectCards></ProjectCards>
               </Col>
             </Row>
-            <Row>
-              <PayPalDonateButton></PayPalDonateButton>
+          </Container>
+
+          <div style={{minHeight:"3em"}}></div>
+
+          <FadedHeader title="Education" side="left" fade="right"></FadedHeader>
+          <Container id="Education">
+            <Row className="padded-top">
+              <Carousel></Carousel> {/* Moved data-aos to component*/}
             </Row>
           </Container>
+            <br /><br />
 
           <div style={{minHeight:"3em"}}></div>
 

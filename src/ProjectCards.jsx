@@ -22,12 +22,13 @@ export default class ProjectCards extends Component {
                     date: "Feb 2025"
                 },
                 {
-                    name: "Paycheck Calculator",
-                    img: paycheck,
-                    description: "A Bash CLI tool that calculates take-home pay after taxes. Provide your annual salary and optional ZIP code to fetch a paycheck estimate from SmartAsset, with results copied to clipboard automatically.",
-                    url: "https://github.com/bavrumov/PaycheckCalculator",
-                    repoUrl: "https://github.com/bavrumov/PaycheckCalculator",
-                    date: "Mar 2019"
+                    name: "bavrumov.github.io",
+                    img: portfolio98,
+                    description: "Original personal portfolio site with a Windows 98-inspired retro desktop aesthetic. Built with vanilla HTML, CSS, and JavaScript — features a file-system-style interface with icons, folders, and a color picker.",
+                    url: "https://bavrumov.github.io/",
+                    liveUrl: "https://bavrumov.github.io/",
+                    repoUrl: "https://github.com/bavrumov/bavrumov.github.io",
+                    date: "May 2016"
                 },
                 {
                     name: "Durak Card Game",
@@ -39,13 +40,12 @@ export default class ProjectCards extends Component {
                     date: "Jan 2016"
                 },
                 {
-                    name: "bavrumov.github.io",
-                    img: portfolio98,
-                    description: "Original personal portfolio site with a Windows 98-inspired retro desktop aesthetic. Built with vanilla HTML, CSS, and JavaScript — features a file-system-style interface with icons, folders, and a color picker.",
-                    url: "https://bavrumov.github.io/",
-                    liveUrl: "https://bavrumov.github.io/",
-                    repoUrl: "https://github.com/bavrumov/bavrumov.github.io",
-                    date: "May 2016"
+                    name: "Paycheck Calculator",
+                    img: paycheck,
+                    description: "A Bash CLI tool that calculates take-home pay after taxes. Provide your annual salary and optional ZIP code to fetch a paycheck estimate from SmartAsset, with results copied to clipboard automatically.",
+                    url: "https://github.com/bavrumov/PaycheckCalculator",
+                    repoUrl: "https://github.com/bavrumov/PaycheckCalculator",
+                    date: "Mar 2019"
                 }
             ]
         }
