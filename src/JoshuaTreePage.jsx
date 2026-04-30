@@ -130,7 +130,7 @@ export default function JoshuaTreePage() {
             <span>— Aldous Huxley, <em>The Doors of Perception</em></span>
           </p>
           <p className="jt-credits">
-            Joshua Tree National Park · Cholla Cactus Garden · Photographs by B. Avrumov
+            Joshua Tree National Park · Cholla Cactus Garden
           </p>
         </div>
       </section>
