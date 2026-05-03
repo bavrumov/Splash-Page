@@ -43,7 +43,8 @@ export default class ProjectCards extends Component {
                     name: "Paycheck Calculator",
                     img: paycheck,
                     description: "A Bash CLI tool that calculates take-home pay after taxes. Provide your annual salary and optional ZIP code to fetch a paycheck estimate from SmartAsset, with results copied to clipboard automatically.",
-                    url: "https://github.com/bavrumov/PaycheckCalculator",
+                    url: "https://bavrumov.github.io/ms-dos/",
+                    liveUrl: "https://bavrumov.github.io/ms-dos/",
                     repoUrl: "https://github.com/bavrumov/PaycheckCalculator",
                     date: "Mar 2019"
                 }
